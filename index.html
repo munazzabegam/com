@@ -6,123 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <title>Freedom Fighters</title>
+    <title>Webex</title>
 </head>
 <body>
     <nav>
-        <div class="menu-icon">
-            <i class="fa fa-bars"></i>
-        </div>
         <div class="head">
-        <h1>OUR <span style="color: rgb(185, 21, 21);">HEROS</span></h1>
+        <h1>OUR <span style="color: rgb(185, 21, 21);">HEROES</span></h1>
         </div>
         <div class="menu">
         <ul>
-            <li><a href="#">Fighters</a></li>
-            <li><a href="#">Galary</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="#fighters">Fighters</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
-        <div class="close-icon">
-          <i class="fas fa-times"></i>
-        </div>
     </div>
     </nav>
 
     <!-- home section  -->
     <section class="home-section" id="home">
-        <!-- <div class="image">
-            <img src="/image/p3.jpg" alt="" srcset="">
-        </div> -->
+        <div class="image">
+            
+        </div>
         <div class="home-content">
-            <h2>Lets remember our Freedom fighters</h2>
-           <a href="">Explore</a> 
+            <h2>Lets remember our Freedom fighters!!!</h2>
+           <a href="#fighters">Explore</a> 
         </div>
     </section>
 
-<section id="fighters">
+<section class ="fighters" id="fighters">
     <h2>Freedom Fighters</h2>
     
     <div class="fighter-category">
         <!-- Fighter 1 -->
         <div class="fighter">
-            <img src="/image/p1.jpg" alt="Freedom Fighter 1">
-            <h4>Mahatma Gandhi</h4>
+            <img src="/image/gandhiji.jpeg" alt="Freedom Fighter 1">
+            <h4 style="text-align: center; font-size: 20px;margin-bottom: 5px;">Mahatma Gandhi</h4>
             <p>Mohandas Karamchand Gandhi, often known as Mahatma Gandhi, was born on October 2, 1869. His birthplace was Porbandar, a coastal town in the present-day state of Gujarat, India. Gandhi's birthday is celebrated annually in India as Gandhi Jayanti, a national holiday dedicated to honoring his life, philosophy, and contributions to the country's struggle for independence and social justice.</p>
-            <!-- <p>Mahatma Gandhi's contributions to India are numerous and far-reaching, shaping the course of its history, politics, society, and values. His relentless efforts to bring about social and political change have left an indelible mark on the nation. Here are some of his key contributions: -->
-                <!-- <ul>
-                    <li><p>Nonviolent Resistance and Satyagraha:
-                        Gandhi introduced the concept of nonviolent resistance or Satyagraha as a powerful tool for social and political change. This philosophy inspired millions of Indians to stand up against oppression, injustice, and colonial rule without resorting to violence.</p></li>
-                </ul> -->
-            </p>
+            <p></p>
         </div>
         
         <!-- Fighter 2 -->
         <div class="fighter">
-            <img src="/image/p1.jpg" alt="Freedom Fighter 2">
-            <h4>Bhagat Singh</h4>
-            <p>Bhagat Singh was a revolutionary socialist who played a significant role...</p>
+            <img src="/image/singh.jpg" alt="Freedom Fighter 2">
+            <h4 style="text-align: center; font-size: 20px;margin-bottom: 5px;">Bhagat Singh</h4>
+            <p>Bhagat Singh (1907–1931) was a prominent Indian revolutionary and freedom fighter who played a significant role in the struggle for India's independence from British colonial rule. He is remembered for his bravery, commitment to the cause of freedom, and his contribution to shaping the nationalist movement. </p>
         </div>
 
-
+        <!-- Fighter 3 -->
         <div class="fighter">
-            <img src="/image/p1.jpg" alt="Freedom Fighter 1">
-            <h4>Mahatma Gandhi</h4>
-            <p>Mohandas Karamchand Gandhi, commonly known as Mahatma Gandhi...</p>
+            <img src="/image/subhash.jpeg" alt="Freedom Fighter 3">
+            <h4  style="text-align: center; font-size: 20px;margin-bottom: 5px;">Subhash Chandra Bose</h4>
+            <p>Subhas Chandra Bose (1897–1945) was an Indian nationalist leader and a prominent figure in the struggle for India's independence from British colonial rule. He is often referred to as Netaji (meaning "Respected Leader" in Hindi) and is known for his strong patriotism, charismatic leadership, and determination to free India from British domination.</p>
         </div>
     </div>
+
+    <!-- Fighter 4 -->
+    <div class="women"><h4 style="text-align: center;font-size: 25px;" > Jhansi Rani</h4>
+    <div class="rani"> 
+        <div class="picture"> <img src="/image/Rani.jpeg" alt=""></div>
+        <div class="content">
+            <p>
+                Rani Lakshmibai (or Rani Lakshmi Bai) was born on 19 November 1828 (some sources say 1835)
+                in the town of Benares (now Varanasi) into a Karhada Brahmin family.She was named Manikarnika Tambe and was nicknamed Manu.Her father was Moropant Tambe and her mother Bhagirathi Sapre (Bhagirathi Bai). Her parents came from the Tambe village of the Guhagar taluka located in the Ratnagiri district of modern-day Maharashtra.[10] Her mother died when she was four years old. Her father was a Commander during the war of Kalyanpranth. Her father worked for Peshwa Baji Rao II of Bithoor district.[11] The Peshwa called her "Chhabili", which means "beautiful " and "lively and cheerful". She was educated at 
+                home and was taught to read and write, and was more independent in her childhood than others 
+                of her age. 
+            </p>
+        </div>
+    </div>
+</div>
 </section>
 
-
-
-
-
-
-
-
-
-
+<!-- footer section  -->
+<footer>
+    <div class="footer-section">
+    <h4>&copy Webex 2023</h4>
+    <p>All rights are reserved</p>
+    </div>
+</footer>
 </body> 
-
-<script>
-  const menuIcon = document.querySelector(".menu-icon");
-  const closeIcon = document.querySelector(".close-icon"); // Make sure this is correct
-  const menu = document.querySelector(".menu");
-  const menuItems = document.querySelectorAll(".menu ul li a");
-
-  menuIcon.addEventListener("click", () => {
-      menu.classList.toggle("active");
-  });
-
-  closeIcon.addEventListener("click", () => {
-      menu.classList.remove("active");
-  });
-
-  menuItems.forEach(item => {
-      item.addEventListener("click", () => {
-          menu.classList.remove("active");
-      });
-  });
-
-
-
-  // Add event listeners to open details on photo click
-document.addEventListener('DOMContentLoaded', function () {
-    const fighters = document.querySelectorAll('.fighter');
-    fighters.forEach(fighter => {
-        const img = fighter.querySelector('img');
-        const details = fighter.querySelector('p');
-        
-        img.addEventListener('click', () => {
-            // Toggle display of details on photo click
-            details.classList.toggle('show-details');
-        });
-    });
-});
-
-</script>
-
-
 
 
 </html>
