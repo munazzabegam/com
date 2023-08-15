@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Freedom Fighters</title>
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="head">
+        <h1>OUR <span style="color: rgb(185, 21, 21);">HEROS</span></h1>
+        </div>
+        <div class="menu">
+        <ul>
+            <li><a href="#">Fighters</a></li>
+            <li><a href="#">Galary</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+        <div class="close-icon">
+          <i class="fas fa-times"></i>
+        </div>
+    </div>
+    </nav>
+
+    <!-- home section  -->
+    <section class="home-section" id="home">
+        <!-- <div class="image">
+            <img src="/image/p3.jpg" alt="" srcset="">
+        </div> -->
+        <div class="home-content">
+            <h2>Lets remember our Freedom fighters</h2>
+           <a href="">Explore</a> 
+        </div>
+    </section>
+
+<section id="fighters">
+    <h2>Freedom Fighters</h2>
+    
+    <div class="fighter-category">
+        <!-- Fighter 1 -->
+        <div class="fighter">
+            <img src="/image/p1.jpg" alt="Freedom Fighter 1">
+            <h4>Mahatma Gandhi</h4>
+            <p>Mohandas Karamchand Gandhi, often known as Mahatma Gandhi, was born on October 2, 1869. His birthplace was Porbandar, a coastal town in the present-day state of Gujarat, India. Gandhi's birthday is celebrated annually in India as Gandhi Jayanti, a national holiday dedicated to honoring his life, philosophy, and contributions to the country's struggle for independence and social justice.</p>
+            <!-- <p>Mahatma Gandhi's contributions to India are numerous and far-reaching, shaping the course of its history, politics, society, and values. His relentless efforts to bring about social and political change have left an indelible mark on the nation. Here are some of his key contributions: -->
+                <!-- <ul>
+                    <li><p>Nonviolent Resistance and Satyagraha:
+                        Gandhi introduced the concept of nonviolent resistance or Satyagraha as a powerful tool for social and political change. This philosophy inspired millions of Indians to stand up against oppression, injustice, and colonial rule without resorting to violence.</p></li>
+                </ul> -->
+            </p>
+        </div>
+        
+        <!-- Fighter 2 -->
+        <div class="fighter">
+            <img src="/image/p1.jpg" alt="Freedom Fighter 2">
+            <h4>Bhagat Singh</h4>
+            <p>Bhagat Singh was a revolutionary socialist who played a significant role...</p>
+        </div>
+
+
+        <div class="fighter">
+            <img src="/image/p1.jpg" alt="Freedom Fighter 1">
+            <h4>Mahatma Gandhi</h4>
+            <p>Mohandas Karamchand Gandhi, commonly known as Mahatma Gandhi...</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+</body> 
+
+<script>
+  const menuIcon = document.querySelector(".menu-icon");
+  const closeIcon = document.querySelector(".close-icon"); // Make sure this is correct
+  const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menu ul li a");
+
+  menuIcon.addEventListener("click", () => {
+      menu.classList.toggle("active");
+  });
+
+  closeIcon.addEventListener("click", () => {
+      menu.classList.remove("active");
+  });
+
+  menuItems.forEach(item => {
+      item.addEventListener("click", () => {
+          menu.classList.remove("active");
+      });
+  });
+
+
+
+  // Add event listeners to open details on photo click
+document.addEventListener('DOMContentLoaded', function () {
+    const fighters = document.querySelectorAll('.fighter');
+    fighters.forEach(fighter => {
+        const img = fighter.querySelector('img');
+        const details = fighter.querySelector('p');
+        
+        img.addEventListener('click', () => {
+            // Toggle display of details on photo click
+            details.classList.toggle('show-details');
+        });
+    });
+});
+
+</script>
+
+
+
+
+</html>
